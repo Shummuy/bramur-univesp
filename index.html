@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style.css">
+<title>Formulário de Inscrição</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+
+<form>
+    <div class="titulo">
+        <a href="https://www.instagram.com/_bramur/" target="_blank"><img src="assets/bramur2.png" alt=""></a>
+        <h2>Agende sua aula experimental</h2>
+    </div>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" required min="16" class="styled-input">
+    
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+    <label for="modalidade">Modalidade:</label>
+    <select id="modalidade" name="modalidade" placeholder="(xx) xxxxx-xxxx">
+        <option value="" disabled selected>Selecione uma modalidade</option>
+        <option value="muay_thai">Muay Thai</option>
+        <option value="boxe">Boxe</option>
+    </select>
+
+    <div class="calendar-container">
+        <div id="calendar"></div>
+    </div>
+    
+    <button type="submit">Enviar</button>
+</form>
+<script src="/script.js"></script>
+
+</body>
+</html>
